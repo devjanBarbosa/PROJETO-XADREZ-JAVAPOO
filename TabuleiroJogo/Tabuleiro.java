@@ -3,10 +3,9 @@ package TabuleiroJogo;
 public class Tabuleiro {
 	private int coluna;
 	private int linha;
-	private Peca[][] pecas;
+	public Peca[][] pecas;
 
-	public Tabuleiro(int linha, Peca[][] pecas) {
-		super();
+	public Tabuleiro(int linha, int coluna) {
 		this.linha = linha;
 		this.coluna = coluna;
 		pecas = new Peca[linha][coluna];

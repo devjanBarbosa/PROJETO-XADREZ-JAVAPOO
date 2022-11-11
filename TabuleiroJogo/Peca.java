@@ -4,6 +4,9 @@ public class Peca {
 	protected Posicao posicao;
 	private Tabuleiro tabuleiro;
 
+	public Peca(Tabuleiro tabuleiro2) {
+	}
+
 	public void peca(Tabuleiro tabuleiro) {
 		this.tabuleiro = tabuleiro;
 	}
