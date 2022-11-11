@@ -28,8 +28,8 @@ public class Chessmatch {
     }
 
     private void inisetup(){
-        tabuleiro.colocarpeca(new Torre(tabuleiro, Color.WHITE), new Posicao(0, 0));
-        tabuleiro.colocarpeca(new Rei(tabuleiro, Color.WHITE), new Posicao(0,3));
+        tabuleiro.colocarpeca(new Torre(tabuleiro, Color.WHITE), new Posicao(3, 0));
+        tabuleiro.colocarpeca(new Rei(tabuleiro, Color.WHITE), new Posicao(3,0));
     }
 
 }
