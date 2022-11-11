@@ -1,6 +1,9 @@
 package chess;
 
+import TabuleiroJogo.Posicao;
 import TabuleiroJogo.Tabuleiro;
+import chesspieces.Rei;
+import chesspieces.Torre;
 
 public class Chessmatch {
 
@@ -8,6 +11,7 @@ public class Chessmatch {
 
     public Chessmatch() {
         tabuleiro = new Tabuleiro(8, 8);
+        inisetup();
 
     }
 
@@ -21,6 +25,11 @@ public class Chessmatch {
             }
         }
         return mat;
+    }
+
+    private void inisetup(){
+        tabuleiro.colocarpeca(new Torre(tabuleiro, Color.WHITE), new Posicao(0, 0));
+        tabuleiro.colocarpeca(new Rei(tabuleiro, Color.WHITE), new Posicao(0,3));
     }
 
 }

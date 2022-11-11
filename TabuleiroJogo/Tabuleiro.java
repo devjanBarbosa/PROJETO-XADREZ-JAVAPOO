@@ -27,4 +27,8 @@ public class Tabuleiro {
 		this.linha = linha;
 	}
 
+	public void colocarpeca(Peca peca, Posicao posicao){
+		pecas[posicao.getLinha()][posicao.getColuna()] = peca;
+		peca.posicao = 	posicao;
+	}
 }
